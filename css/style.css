@@ -14,6 +14,15 @@ table{
     font-weight: bold;
 }
 
+h2{
+    font-size: 22px;
+}
+
+h4{
+    font-size: 22px;
+    word-wrap: break-word
+}
+
 td{
     border: 1px solid black;
     height: 50px;
@@ -33,7 +42,7 @@ tr{
 }
 
 #detalhes{
-    width: 50vw;
+    width: 60vw;
     height: 70vh;
     display: flex;
     background-color: rgba(133, 133, 133, 1.6);
@@ -46,33 +55,33 @@ tr{
 }
 
 
+
 #imagem-grande{
-    height: 350px;
-    width: 300px;
+    height: 40vh;
+    width: 18vw;
 }
 
 #informacao{
     height: 380px;
     width: 40vw;
     display: flex;
-    flex-direction: column;
     flex-wrap: wrap;
+    word-wrap: break-word
 }
 
 
 .cards{
     margin: 0;
-    height: 80px;
-    width: 20px;
+    height: 30px;
+    width: 200px;
     display: flex;
-    margin: 5px;
-
+    align-items: center;    
 }
 
 /* responsivo*/
-@media (max-width: 600px)
+@media (max-width: 1200px)
 {
   body{
-      background-color: blueviolet;
+
   }
 }
