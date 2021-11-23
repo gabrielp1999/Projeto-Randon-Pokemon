@@ -1,9 +1,20 @@
 body{
     background-color: rgba(130, 130, 120, 0.7);
-    display: flex;
+    box-sizing: border-box;
     font-family:courier,arial,helvetica;;
     text-transform: capitalize;
 }
+header {
+    display: grid;
+    justify-content: center;
+}
+
+main{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    justify-content: center;
+}
+
 table{
     border: 1px solid black;
     height: 60vh;
@@ -14,12 +25,9 @@ table{
     font-weight: bold;
 }
 
-h2{
-    font-size: 22px;
-}
 
-h4{
-    font-size: 22px;
+h4, h2{
+    font-size: 20px;
     word-wrap: break-word
 }
 
@@ -42,46 +50,50 @@ tr{
 }
 
 #detalhes{
+
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    justify-content: center;
     width: 60vw;
-    height: 70vh;
-    display: flex;
+    height: 350px;
     background-color: rgba(133, 133, 133, 1.6);
     margin-left: 10px;
+    padding: 20px;
 }
 #imagem{
     height: 350px;
-    width: 320px;
-    background-color:rgba(133, 133, 133, 0.2 );
+    width: 20vw;
 }
 
 
 
 #imagem-grande{
-    height: 40vh;
+    height: 330px;
     width: 18vw;
 }
 
 #informacao{
     height: 380px;
     width: 40vw;
-    display: flex;
-    flex-wrap: wrap;
-    word-wrap: break-word
+    display: grid;
+    grid-template-columns: 1fr 1fr ;
+    justify-content: start;
+
 }
 
-
+h2, h4 {
+    margin:0; 
+}
 .cards{
-    margin: 0;
-    height: 30px;
-    width: 200px;
-    display: flex;
-    align-items: center;    
+    height: auto;
+    width: 19vw;
+    display: grid;    
+    justify-content: flex-start;
+    align-content:flex-start;
+    
 }
 
 /* responsivo*/
-@media (max-width: 1200px)
+@media (max-width : 750px)
 {
-  body{
-
-  }
 }

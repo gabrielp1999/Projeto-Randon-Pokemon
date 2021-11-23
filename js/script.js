@@ -17,7 +17,7 @@ async function preencherTabela() {
     </tr>`;
     const tabela = document.getElementById('pokemon-table');
 
-    for(let i = 0; i < 10; i++) {
+    for(let i = 0; i < 8; i++) {
         const numero = gerarNumero();
         const pokemon = await buscarPokemon(numero);
 
